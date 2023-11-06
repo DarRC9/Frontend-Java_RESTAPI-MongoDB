@@ -1,0 +1,37 @@
+/* CSS for your BrowserRouter, Link, and Route */
+
+/* Style for the container */
+nav {
+  background-color: #202020;
+  padding: 20px;
+  text-align: center;
+}
+
+.navBar {
+  margin-right: auto;
+
+}
+.link {
+  text-decoration: none;
+  color: #fff;
+  margin: 20px; 
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: #b379ff; 
+}
+
+.link:focus {
+  color: #b379ff; 
+}
+
+
+.route {
+  width: 80%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #202020; 
+  color: #fff; 
+}
