@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './UserForm.css'
+import  axiosInstance  from './../api/axiosConfig'
 import { FieldForm } from './components/Field'
 import { ValidationMessage } from './components/ValidationMessage'
 import { checkUsername, checkName, checkSurname, checkCountry, checkId, handleEmptyInput, checkForm} from './components/FieldValidations'
@@ -13,8 +14,26 @@ function UserForm() {
   const [error, setError] = useState(false)
   const [validForm, setValidForm] = useState(false)
 
+  const newUser = {
+    username: username,
+    name: name,
+    surname: surname,
+    country: country,
+    id: id
+  }
+
+  const submitUser = async () => {
+    try {
+      const response = await axiosInstance.post(`/users/save`, newUser);
+      console.log('User added:', response.data);
+    } catch (error) {
+      console.error('Submit User Error:', error);
+    }
+  };
+
   const submitInformation = (click) => {
     click.preventDefault()
+    submitUser()
     setValidForm(true)
   }
 

@@ -55,7 +55,7 @@ export function FieldForm ({ fieldType, validatingFunction, fieldName, placehold
     return (
       <div className='section'>
       <label className='formLabel'>Country</label>
-      <select data-testid={inputDataTestId} value={value} className="formInput" name='Country' onChange={handleChange}>
+      <select data-testid={inputDataTestId} value={value} className={className} name='Country' onChange={handleChange}>
         {options}
       </select>
     </div>

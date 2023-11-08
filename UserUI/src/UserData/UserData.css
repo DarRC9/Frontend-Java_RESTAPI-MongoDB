@@ -1,0 +1,50 @@
+
+table {
+    width: 100%;
+    border-color: azure;
+  }
+  
+  thead {
+    background-color: #ffffff00;
+    color:rgb(185, 111, 238);
+    }
+  
+  thead th {
+    padding: 10px;
+    border-bottom: 1px solid #6b6b6b;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #3f3f3f;
+    text-align: center;
+  }
+  
+  tbody tr:hover {
+    background-color: #2b2b2b;
+  }
+
+  button {
+    background-color: rgb(185, 111, 238);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  button:hover {
+    background-color: rgb(106, 62, 138);
+    color: white;
+  }
+
+  input {
+    width: 80%;
+    padding: 10px;
+    background-color: #3f3f3f;
+    border-radius: 5px;
+    border: 1px solid #6b6b6b;
+    margin: 10px;
+    color: white;
+  }

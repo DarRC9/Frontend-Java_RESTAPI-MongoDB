@@ -8,7 +8,7 @@
 }
 
 .header {
-  width: 100%;
+  width: 80%;
 }
 
 main {
@@ -20,7 +20,7 @@ main {
   width: 100%;
   align-items: center;
   justify-content: center;
-  border: solid 3px white;
+  border: solid 3px rgb(150, 127, 255);
   border-radius: 5px;
   padding: 20px;
 }
@@ -35,7 +35,7 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+  font-size: 20px;
   margin: 5px;
   padding-top: 10px;
 }
@@ -48,16 +48,19 @@ main {
 
 .formInput {
   width: 80%;
-  border: solid dashed;
+  border: solid 1px #562fc0;
   border-radius: 5px;
+  background-color: transparent;
+  font-size: 20px;
+  color: blueviolet;
 }
 
 .formInput.has-error {
-   border: dashed 1px red;
+   border: solid 1px rgb(255, 0, 119);
 }
 
 .sectionMessage {
-  color: rgb(255, 147, 147);
+  color: rgb(255, 221, 147);
   font-size: 12px;
   font-weight: lighter;
   margin: 5px;
